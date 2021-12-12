@@ -8,5 +8,4 @@ import javax.inject.Inject
 @HiltViewModel
 class HomeViewModel @Inject constructor(
     injectionUtil: InjectionUtil
-) : BaseViewModel(injectionUtil) {
-}
+) : BaseViewModel(injectionUtil)

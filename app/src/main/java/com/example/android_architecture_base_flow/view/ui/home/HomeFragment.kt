@@ -11,7 +11,7 @@ import com.example.android_architecture_base_flow.util.autoCleared
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HomeFragment: Fragment() {
+class HomeFragment : Fragment() {
 
     private val viewModel: HomeViewModel by viewModels()
     private var binding: FragmentHomeBinding by autoCleared()

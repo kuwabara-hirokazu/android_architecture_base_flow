@@ -67,11 +67,11 @@ class SimpleDialogFragment : DialogFragment() {
 
         private val fragmentManager: FragmentManager =
             fragment?.childFragmentManager ?: activity?.supportFragmentManager
-            ?: throw IllegalStateException("Required value was null.")
+                ?: throw IllegalStateException("Required value was null.")
 
         private val lifecycleOwner: LifecycleOwner =
             fragment?.viewLifecycleOwner ?: activity
-            ?: throw IllegalStateException("Required value was null.")
+                ?: throw IllegalStateException("Required value was null.")
 
         private fun setText(key: String, text: String): Builder {
             return this.apply {
@@ -130,4 +130,3 @@ class SimpleDialogFragment : DialogFragment() {
         }
     }
 }
-
